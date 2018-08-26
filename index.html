@@ -1,74 +1,201 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-  </head>
-  <body>
-  <header>
-	<nav>
-		 <div class="logo"><img src="#" alt="Логотип студии Нердс"></div>
-		 	<ul class="main-menu">
-				<li><a href="#">Студия</a></li>
-				<li><a href="#">Клиенты</a></li>
-				<li><a href="nerds-catalog.psd">Магазин</a></li>
-				<li><a href="#">Контакты</a></li>
-			</ul>
-			<ul class="basket">
-			</ul>
-	</nav>
-  </header>
-  <section class="benefits">
-	<h1 class="visually-hidden">Дизайн студия из Краснодара</h1>
-  	<b>Долго, дорого, скрупулезно.</b>
-  	<p>Математически выверенный дизайн для вашего сайта или мобильного приложения</p>
-  	<a href="#">Узнать больше</a>
+<head>
+  <meta charset="UTF-8">
+  <title>Нёрдс</title>
+</head>
+<body>
+
+<header>
+  <nav class="navigation">
+
+    <img src="img/main_logo.png" alt="Логотип Нёрдс. Магазина готовых шаблонов" width="100" height="50" />
+
+    <ul class="navigation-site">
+      <li class="navigation-site-item">
+        <a href="studio.html">Студия</a>
+      </li>
+      <li class="navigation-site-item">
+        <a href="clients.html">Клиенты</a></li>
+      <li class="navigation-site-item"><a href="shop.html">Магазин</a>
+      </li>
+      <li class="navigation-site-item">
+        <a href="contacts.html">контакты</a>
+      </li>
+    </ul>
+    <a class="navigation-basket">Корзина</a>
+  </nav>
+
+  <h1 class="visually-hidden">Магазин готовых шаблонов</h1>
+</header>
+
+
+<main class="container">
+
+  <section class="slider-wrapper">
+
+    <ul class="slider">
+
+      <li class="slider-item active">
+        <div class="slider-item-description">
+          <p>
+            <b>Долго, дорого, скрупулезно.</b>
+            <span>Математически выверенный дизайн  для вашего сайта или мобильног</span>
+          </p>
+
+          <a href="#">Узнать больше</a>
+        </div>
+      </li>
+
+      <li class="slider-item">
+        <div class="slider-item-description">
+          <p>
+            <b>Любим математику как никто другой</b>
+            <span>Никакого креатива, только математические формулы  для расчета и</span>
+          </p>
+
+          <a href="#">Узнать больше</a>
+        </div>
+      </li>
+
+      <li class="slider-item">
+        <div class="slider-item-description">
+          <p>
+            <b>Только ночь, только хардкор</b>
+            <span>Работать днем, как все? Мы против этого. Ближе к полуночи работ</span>
+          </p>
+
+          <a href="#">Узнать больше</a>
+        </div>
+      </li>
+
+    </ul>
+
+    <ul class="slider-indicator">
+      <li class="slider-indicator-item">
+        <button class="slider-indicator-item-btn active"></button>
+      </li>
+      <li class="slider-indicator-item">
+        <button class="slider-indicator-item-btn"></button>
+      </li>
+      <li class="slider-indicator-item">
+        <button class="slider-indicator-item-btn"></button>
+      </li>
+    </ul>
+
   </section>
- <div class="our-work">
-   	<section class="our-work web-sites">
-    		<h2>Веб-сайты</h2>
-    		<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-    		<a href="#">Заказать</a>
-    </section>
-    <section class="our-work apps">	
-    		<h2>Приложения</h2>
-    		<p>Покорите топ-10 приложений в AppStore и Google Play</p>
-    		<a href="#">Заказать</a>
-    </section>
-    <section class="our-work presentation">
-    		<h2>Презентации</h2>
-    		<p>Вы даже не подозреваете насколько вы изумительны!</p>
-    		<a href="#">Заказать</a>
-    </section>
- </div>
-    <section class="about-us">
-    	<b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
-    	<p>Исповедуем принципы минимализма и чистоты. Ставим математическиый расчет превыше креатива. Работаем не покладая рук , как роботы.</p>
-    	<b>Выполняем заказы на разработку</b>
-    	<p>Веб-сайтов любой сложности</p>
-    	<p>Мобильных приложений для IOS и Android</p>
-    	<p>Слайдшоу и видео для корпоративных презентаций</p>
-    </section>
-    <section class="statistics">
-    	<div class="logo with-svg"><img src="#" alt="Логотип студии Нердс"></div>
-    	<b>	С 2004 года любим точность во всем:</b>
-    	<p class="statistics text"><span class="statistics numbers">146% </span>Уровень самоотдачи</p>
-    	<p class="statistics text"><span class="statistics numbers">100% </span>Соблюдение сроков</p>
-    	<p class="statistics text"><span class="statistics numbers">50% </span>Минимальная предоплата</p>
-     </section>
-     <section class="our-partners">
-     	<ul>
-     		<li class="our-partners htmlacademy"><a href="https://htmlacademy.ru/intensive/htmlcss"></a></li>
-     		<li class="our-partners borodinski"><a href="#"></a></li>
-     		<li class="our-partners pink"><a href="#"></a></li>
-     		<li class="our-partners mishka"><a href="#"></a></li>
-     	</ul>
-     </section>
-     <!--Здесь будет карта-->
-     <footer>
-     	<span class="social vk"></span>
-     	<span class="social fb"></span>
-     	<span class="social tl"></span>
-        <b>Давайте дружить, это выгодно!</b>
-        <p>Скидка 10% для друзей из социальных сетей.</p>
-     </footer>
+
+  <section class="features">
+    <h2 class="visually-hidden">Преимущества</h2>
+    <ul class="features-list">
+      <li class="features-list-websites"><b>Веб-сайты</b>
+        <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+        <button>Заказать</button>
+      </li>
+      <li class="features-list-applications"><b>Приложения</b>
+        <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+        <button>Заказать</button>
+      </li>
+      <li class="features-list-presentations"><b>Презентации</b>
+        <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+        <button>Заказать</button>
+      </li>
+    </ul>
+  </section>
+
+  <section class="studio">
+
+    <h2>Мы — маленькая, но гордая дизайн-студия из Краснодара. </h2>
+
+    <div class="studio-description">
+      <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая
+        рук, как роботы.</p>
+
+      <b>Выполняем заказы на разработку:</b>
+      <ul>
+        <li>Веб-сайтов любой сложности</li>
+        <li>Мобильных приложений для iOS и Android</li>
+        <li>Слайдшоу и видео для корпоративных презентаций</li>
+      </ul>
+    </div>
+
+    <div class="studio-statistics">
+      <b>с 2004 года Любим точность во всем:</b>
+
+      <ul>
+        <li>
+          <span class="studio-statistics-percent">146%</span>
+          <span>Уровень самоотдачи</span>
+        </li>
+        <li>
+          <span class="studio-statistics-percent">100%</span>
+          <span>Соблюдение сроков</span>
+        </li>
+        <li>
+          <span class="studio-statistics-percent">50%</span>
+          <span>Минимальная предоплата</span>
+        </li>
+      </ul>
+    </div>
+
+  </section>
+
+  <section class="partners">
+    <ul>
+      <li><a href="">htmlacademy</a></li>
+      <li><a href="">barbershop</a></li>
+      <li><a href="">pink</a></li>
+      <li><a href="">mishka</a></li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  <section class="contacts">
+
+    <div class="contacts-box">
+
+      <h2>NЁRDS DESIGN STUDIO</h2>
+
+      <p class="contacts-box-adress">
+        191186, Санкт-Петербург, <br>
+        ул. Б. Конюшенная, д. 19/8
+      </p>
+      <span class="contacts-box-phone">
+        тел. +7 (812) 275-75-75
+      </span>
+
+      <button class="contacts-box-write-us">Напишите нам</button>
+    </div>
+
+    <iframe class="contacts-map" src="" frameborder="0"></iframe>
+
+  </section>
+
+  <section class="social">
+    <ul class="social-list">
+      <li><a href="#">VK</a></li>
+      <li><a href="#">Facebook</a></li>
+      <li><a href="#">Instagram</a></li>
+    </ul>
+
+    <p class="social-lets-text">
+      <b>Давайте дружить, это выгодно!</b><br>
+      Скидка 10% для друзей из социальных сетей
+    </p>
+  </section>
+</footer>
+
+
+<section class="modal modal-write-us">
+  <h2>Напишите нам</h2>
+  <button class="modal-close">Закрыть</button>
+  <!-- форма -->
+
+  <button class="btn btn-submit btn-modal-write-us"></button>
+</section>
+
+
+</body>
+</html>
