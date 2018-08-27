@@ -6,7 +6,7 @@
 </head>
 <body>
 
-<header>
+<header class="header">
   <nav class="navigation">
 
     <a class="main-logo" href="index.html">
@@ -26,10 +26,37 @@
         <a href="contacts.html">контакты</a>
       </li>
     </ul>
-    <a class="navigation-basket">Корзина</a>
+    <a href="#" class="navigation-basket">Корзина</a>
   </nav>
 
-  <h1 class="visually-hidden">Магазин готовых шаблонов</h1>
+  <header class="header">
+  <nav class="navigation">
+
+    <a class="main-logo" href="index.html">
+      <img src="img/main_logo.png" alt="Логотип Нёрдс. Магазина готовых шаблонов" width="100" height="50"/>
+    </a>
+
+    <ul class="navigation-site">
+      <li class="navigation-site-item">
+        <a href="studio.html">Студия</a>
+      </li>
+      <li class="navigation-site-item">
+        <a href="clients.html">Клиенты</a></li>
+      <li class="navigation-site-item active">
+        <a href="catalog.html">Магазин</a>
+      </li>
+      <li class="navigation-site-item">
+        <a href="contacts.html">контакты</a>
+      </li>
+    </ul>
+    <a href="#" class="navigation-basket">Корзина</a>
+  </nav>
+
+  <!-- Насколько вижу, этот заголовок используется на странице каталогов. Значит он будет использоваться и на всех
+  остальных кроме главной.
+  По-этому, на главной считаю, что должен быть скрытым, а на остальных не скрытым -->
+  <h1 class="main-header">Магазин готовых шаблонов</h1>
+</header>
 </header>
 
 
@@ -41,32 +68,34 @@
 
   <section class="catalog">
     <div class="catalog-sort">
-      <h3>Сортировать</h3>
+      <p class="catalog-sort-header">Сортировать</p>
 
       <ul class="catalog-sort-by">
         <li>
-          <button>По цене</button>
+          <a href="#">По цене</a>
         </li>
         <li>
-          <button>По типу</button>
+          <a href="#">По типу</a>
         </li>
         <li>
-          <button>По названию</button>
+          <a href="#">По названию</a>
         </li>
       </ul>
       <ul class="catalog-sort-direction">
         <li>
-          <button>По возрастанию</button>
+          <a href="#">По возрастанию</a>
         </li>
         <li>
-          <button>По спаданию</button>
+          <a href="#">По спаданию</a>
         </li>
       </ul>
     </div>
 
     <ul class="catalog-list">
       <li>
-        <img src="img/catalog_sedona.png" alt="Sedona">
+        <figure class="catalog-list-image">
+          <img src="img/catalog_sedona.png" alt="Sedona">
+        </figure>
 
         <a href="good1.html" class="catalog-list-item-description hidden">
           <h4>Sedona</h4>
@@ -76,7 +105,9 @@
       </li>
 
       <li>
-        <img src="img/catalog_pink.png" alt="Pink">
+        <figure class="catalog-list-image">
+          <img src="img/catalog_pink.png" alt="Pink">
+        </figure>
 
         <a href="good6.html" class="catalog-list-item-description hidden">
           <h4>Pink</h4>
@@ -86,7 +117,9 @@
       </li>
 
       <li>
-        <img src="img/catalog_barbershop.png" alt="Barbershop">
+        <figure class="catalog-list-image">
+          <img src="img/catalog_barbershop.png" alt="Barbershop">
+        </figure>
 
         <a href="good4.html" class="catalog-list-item-description hidden">
           <h4>Barbershop</h4>
@@ -96,7 +129,9 @@
       </li>
 
       <li>
-        <img src="img/catalog_mishka.png" alt="Mishka">
+        <figure class="catalog-list-image">
+          <img src="img/catalog_mishka.png" alt="Mishka">
+        </figure>
 
         <a href="good5.html" class="catalog-list-item-description hidden">
           <h4>Mishka</h4>
@@ -106,7 +141,9 @@
       </li>
 
       <li>
-        <img src="img/catalog_aplus.png" alt="A Plus">
+        <figure class="catalog-list-image">
+          <img src="img/catalog_aplus.png" alt="A Plus">
+        </figure>
 
         <a href="good2.html" class="catalog-list-item-description hidden">
           <h4>A Plus</h4>
@@ -116,7 +153,9 @@
       </li>
 
       <li>
-        <img src="img/catalog_kvast.png" alt="Kvast">
+        <figure class="catalog-list-image">
+          <img src="img/catalog_kvast.png" alt="Kvast">
+        </figure>
 
         <a href="good3.html" class="catalog-list-item-description hidden">
           <h4>Kvast</h4>
@@ -127,26 +166,23 @@
 
     </ul>
 
-    <div>
-      <ul class="catalog-pagination">
-        <li>
-          <a href="#" class="catalog-pagination-item paginator-direction paginator-direction-prev">Предидущая</a>
-        </li>
-        <li>
-          <a href="#" class="catalog-pagination-item active">1</a>
-        </li>
-        <li>
-          <a href="#" class="catalog-pagination-item ">2</a>
-        </li>
-        <li>
-          <a href="#" class="catalog-pagination-item ">3</a>
-        </li>
-        <li>
-          <a href="#" class="catalog-pagination-item paginator-direction paginator-direction-next">Следующая</a>
-        </li>
-      </ul>
-    </div>
-
+    <ul class="catalog-pagination">
+      <li>
+        <a href="#" class="catalog-pagination-item paginator-direction paginator-direction-prev">Предидущая</a>
+      </li>
+      <li>
+        <a href="#" class="catalog-pagination-item active">1</a>
+      </li>
+      <li>
+        <a href="#" class="catalog-pagination-item ">2</a>
+      </li>
+      <li>
+        <a href="#" class="catalog-pagination-item ">3</a>
+      </li>
+      <li>
+        <a href="#" class="catalog-pagination-item paginator-direction paginator-direction-next">Следующая</a>
+      </li>
+    </ul>
 
   </section>
 
@@ -181,10 +217,10 @@
       <li><a href="#">Instagram</a></li>
     </ul>
 
-    <p class="social-lets-text">
-      <b>Давайте дружить, это выгодно!</b><br>
-      Скидка 10% для друзей из социальных сетей
-    </p>
+    <div class="social-lets-text">
+      <p class="social-lets-text-main">Давайте дружить, это выгодно!</p>
+      <p class="social-lets-text-addition">Скидка 10% для друзей из социальных сетей</p>
+    </div>
   </section>
 </footer>
 
