@@ -28,39 +28,11 @@
     </ul>
     <a href="#" class="navigation-basket">Корзина</a>
   </nav>
-
-  <header class="header">
-  <nav class="navigation">
-
-    <a class="main-logo" href="index.html">
-      <img src="img/main_logo.png" alt="Логотип Нёрдс. Магазина готовых шаблонов" width="100" height="50"/>
-    </a>
-
-    <ul class="navigation-site">
-      <li class="navigation-site-item">
-        <a href="studio.html">Студия</a>
-      </li>
-      <li class="navigation-site-item">
-        <a href="clients.html">Клиенты</a></li>
-      <li class="navigation-site-item active">
-        <a href="catalog.html">Магазин</a>
-      </li>
-      <li class="navigation-site-item">
-        <a href="contacts.html">контакты</a>
-      </li>
-    </ul>
-    <a href="#" class="navigation-basket">Корзина</a>
-  </nav>
-
-  <!-- Насколько вижу, этот заголовок используется на странице каталогов. Значит он будет использоваться и на всех
-  остальных кроме главной.
-  По-этому, на главной считаю, что должен быть скрытым, а на остальных не скрытым -->
-  <h1 class="main-header">Магазин готовых шаблонов</h1>
-</header>
 </header>
 
 
 <main class="container">
+  <h1 class="main-header">Магазин готовых шаблонов</h1>
 
   <section class="filter">
     <!-- формы -->
@@ -97,11 +69,13 @@
           <img src="img/catalog_sedona.png" alt="Sedona">
         </figure>
 
-        <a href="good1.html" class="catalog-list-item-description hidden">
-          <h4>Sedona</h4>
+        <div class="catalog-list-item-description">
+          <h4>
+            <a class="catalog-list-item-description-link" href="#">Sedona</a>
+          </h4>
           <p>Информационный сайт для туристов</p>
-          <button>9 900 руб.</button>
-        </a>
+          <a class="catalog-list-item-description-order" href="#">9 900 руб.</a>
+        </div>
       </li>
 
       <li>
@@ -109,11 +83,13 @@
           <img src="img/catalog_pink.png" alt="Pink">
         </figure>
 
-        <a href="good6.html" class="catalog-list-item-description hidden">
-          <h4>Pink</h4>
+        <div class="catalog-list-item-description">
+          <h4>
+            <a class="catalog-list-item-description-link" href="#">Pink</a>
+          </h4></h4>
           <p>Продуктовый лендинг приложения для iOS и Android</p>
-          <button>9 900 руб.</button>
-        </a>
+          <a class="catalog-list-item-description-order" href="#">9 900 руб.</a>
+        </div>
       </li>
 
       <li>
@@ -121,11 +97,13 @@
           <img src="img/catalog_barbershop.png" alt="Barbershop">
         </figure>
 
-        <a href="good4.html" class="catalog-list-item-description hidden">
-          <h4>Barbershop</h4>
+        <div class="catalog-list-item-description">
+          <h4>
+            <a class="catalog-list-item-description-link" href="#">Barbershop</a>
+          </h4>
           <p>Сайт салона красоты. Для мужчин, да.</p>
-          <button>9 900 руб.</button>
-        </a>
+          <a class="catalog-list-item-description-order" href="#">9 900 руб.</a>
+        </div>
       </li>
 
       <li>
@@ -133,11 +111,13 @@
           <img src="img/catalog_mishka.png" alt="Mishka">
         </figure>
 
-        <a href="good5.html" class="catalog-list-item-description hidden">
-          <h4>Mishka</h4>
+        <div class="catalog-list-item-description">
+          <h4>
+            <a class="catalog-list-item-description-link" href="#">Mishka</a>
+          </h4>
           <p>Интернет-магазин вязаных игрушек</p>
-          <button>9 900 руб.</button>
-        </a>
+          <a class="catalog-list-item-description-order" href="#">9 900 руб.</a>
+        </div>
       </li>
 
       <li>
@@ -145,11 +125,13 @@
           <img src="img/catalog_aplus.png" alt="A Plus">
         </figure>
 
-        <a href="good2.html" class="catalog-list-item-description hidden">
-          <h4>A Plus</h4>
+        <div class="catalog-list-item-description">
+          <h4>
+            <a class="catalog-list-item-description-link" href="#">A Plus</a>
+          </h4>
           <p>Лендинг курсов повышения квалификации</p>
-          <button>9 900 руб.</button>
-        </a>
+          <a class="catalog-list-item-description-order" href="#">9 900 руб.</a>
+        </div>
       </li>
 
       <li>
@@ -157,21 +139,23 @@
           <img src="img/catalog_kvast.png" alt="Kvast">
         </figure>
 
-        <a href="good3.html" class="catalog-list-item-description hidden">
-          <h4>Kvast</h4>
+        <div class="catalog-list-item-description">
+          <h4>
+            <a class="catalog-list-item-description-link" href="#">Kvast</a>
+          </h4>
           <p>Промо-сайт производителя крафтового кваса</p>
-          <button>9 900 руб.</button>
-        </a>
+          <a class="catalog-list-item-description-order" href="#">9 900 руб.</a>
+        </div>
       </li>
 
     </ul>
 
     <ul class="catalog-pagination">
       <li>
-        <a href="#" class="catalog-pagination-item paginator-direction paginator-direction-prev">Предидущая</a>
+        <a class="catalog-pagination-item paginator-direction paginator-direction-prev">Предидущая</a>
       </li>
       <li>
-        <a href="#" class="catalog-pagination-item active">1</a>
+        <a class="catalog-pagination-item active">1</a>
       </li>
       <li>
         <a href="#" class="catalog-pagination-item ">2</a>
