@@ -35,7 +35,70 @@
   <h1 class="main-header">Магазин готовых шаблонов</h1>
 
   <section class="filter">
-    <!-- формы -->
+
+    <form action="#" method="post">
+      <fieldset>
+        <legend class="filter-legend">Стоимость</legend>
+
+        <p class="filter-cost-input-wrapper">
+        <label for="cost" class="visibility-hidden">Стоимость</label>
+        <input type="range" id="cost" name="cost"
+               class="filter-cost-input"
+               min="0" max="15000" step="1" value="600"
+               placeholder="от 0 до 15000"  />
+        </p>
+        <p class="filter-cost-input-ranges">
+          <span class="filter-cost-range-from">
+            От <span class="filter-cost-range-from-amount"></span>
+          </span>
+          <span class="filter-cost-range-to">
+            От <span class="filter-cost-range-to-amount"></span>
+          </span>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend class="filter-legend">Сетка</legend>
+
+        <label class="filter-checkbox-label">
+          <input type="radio" name="grid" value="grid" checked /> Адаптивная
+        </label>
+        <label class="filter-checkbox-label">
+          <input type="radio" name="grid" value="fixed" /> Фиксированная
+        </label>
+        <label class="filter-checkbox-label">
+          <input type="radio" name="grid" value="rubber" /> Резиновая
+        </label>
+
+      </fieldset>
+
+      <fieldset>
+        <legend class="filter-legend">Особенности</legend>
+
+        <label class="filter-checkbox-label">
+          <input type="checkbox" name="feachures_1" value="slider" checked /> Слайдер
+        </label>
+        <label class="filter-checkbox-label">
+          <input type="checkbox" name="feachures_2" value="features_block" /> Блок преимуществ
+        </label>
+        <label class="filter-checkbox-label">
+          <input type="checkbox" name="feachures_3" value="news" checked /> Новости
+        </label>
+        <label class="filter-checkbox-label">
+          <input type="checkbox" name="feachures_4" value="gallery" /> Галерея
+        </label>
+        <label class="filter-checkbox-label">
+          <input type="checkbox" name="feachures_5" value="basket" /> Корзина
+        </label>
+
+      </fieldset>
+
+      <button type="submit">Показать</button>
+
+    </form>
+
+
+
   </section>
 
   <section class="catalog">
@@ -44,21 +107,21 @@
 
       <ul class="catalog-sort-by">
         <li>
-          <a href="#">По цене</a>
+          <a href="#" aria-label="Сортировать по цене">По цене</a>
         </li>
         <li>
-          <a href="#">По типу</a>
+          <a href="#" aria-label="Сортировать по типу">По типу</a>
         </li>
         <li>
-          <a href="#">По названию</a>
+          <a href="#" aria-label="Сортировать по названию">По названию</a>
         </li>
       </ul>
       <ul class="catalog-sort-direction">
         <li>
-          <a href="#">По возрастанию</a>
+          <a href="#" aria-label="Дополнительно сортировать по возрастанию">По возрастанию</a>
         </li>
         <li>
-          <a href="#">По спаданию</a>
+          <a href="#" aria-label="Дополнительно сортироват по спаданию">По спаданию</a>
         </li>
       </ul>
     </div>
@@ -212,11 +275,18 @@
 <section class="modal modal-write-us">
   <h2>Напишите нам</h2>
   <button class="modal-close">Закрыть</button>
-  <!-- форма -->
+  <form action="#" method="post">
 
-  <button class="btn btn-submit btn-modal-write-us"></button>
+    <label for="name">Ваше имя:</label>
+    <input type="text" name="name" id="name">
+    <label for="email">Ваш e-mail:</label>
+    <input type="email" name="email" id="email">
+    <label for="mail_text">Текст письма:</label>
+    <textarea name="mail_text" id="mail_text" ></textarea>
+
+    <button type="submit" class="btn btn-submit btn-modal-write-us">Отправить</button>
+  </form>
 </section>
-
 
 </body>
 </html>

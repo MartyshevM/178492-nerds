@@ -108,7 +108,6 @@
 
   <section class="studio">
 
-
     <div class="studio-description">
       <h2>Мы — маленькая, но гордая дизайн-студия из Краснодара. </h2>
 
@@ -149,22 +148,22 @@
   <section class="partners">
     <ul class="partners-list">
       <li>
-        <a href="#">
+        <a href="#" aria-details="Ссылка на сайт партнера: Htmlacademy">
           <img src="img/partners_htmlacademy.png" alt="" width="50" height="50">
         </a>
       </li>
       <li>
-        <a href="#">
+        <a href="#" aria-details="Ссылка на сайт партнера: Barbershop">
           <img src="img/partners_barbershop.png" alt="" width="50" height="50">
         </a>
       </li>
       <li>
-        <a href="#">
+        <a href="#" aria-details="Ссылка на сайт партнера: Pink">
           <img src="img/partners_pink.png" alt="" width="50" height="50">
         </a>
       </li>
       <li>
-        <a href="#">
+        <a href="#" aria-details="Ссылка на сайт партнера: Mishka">
           <img src="img/partners_mishka.png" alt="" width="50" height="50">
         </a>
       </li>
@@ -197,9 +196,21 @@
 
   <section class="social">
     <ul class="social-list">
-      <li><a href="#"><img src="img/social_vk-icon.svg" alt="Давайте дружить ВКонтакте" width="26" height="15"></a></li>
-      <li><a href="#"><img src="img/social_fb-icon.svg" alt="Давайте дружить Facebook" width="12" height="22"></a></li>
-      <li><a href="#"><img src="img/social_insta-icon.svg" alt="Давайте дружить Instagram" width="21" height="21"></a></li>
+      <li>
+        <a href="#" aria-label="Давайте дружить ВКонтакте">
+          <img src="img/social_vk-icon.svg" alt="Давайте дружить ВКонтакте" width="26" height="15">
+        </a>
+      </li>
+      <li>
+        <a href="#" aria-label="Давайте дружить Facebook">
+          <img src="img/social_fb-icon.svg" alt="Давайте дружить Facebook" width="12" height="22">
+        </a>
+      </li>
+      <li>
+        <a href="#" aria-label="Давайте дружить Instagram">
+          <img src="img/social_insta-icon.svg" alt="Давайте дружить Instagram" width="21" height="21">
+        </a>
+      </li>
     </ul>
 
     <div class="social-lets-text">
@@ -213,9 +224,17 @@
 <section class="modal modal-write-us">
   <h2>Напишите нам</h2>
   <button class="modal-close">Закрыть</button>
-  <!-- форма -->
+  <form action="#" method="post">
 
-  <button class="btn btn-submit btn-modal-write-us"></button>
+    <label for="name">Ваше имя:</label>
+    <input type="text" name="name" id="name">
+    <label for="email">Ваш e-mail:</label>
+    <input type="email" name="email" id="email">
+    <label for="mail_text">Текст письма:</label>
+    <textarea name="mail_text" id="mail_text" ></textarea>
+
+    <button type="submit" class="btn btn-submit btn-modal-write-us">Отправить</button>
+  </form>
 </section>
 
 
