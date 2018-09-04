@@ -226,12 +226,18 @@
   <button class="modal-close">Закрыть</button>
   <form action="#" method="post">
 
-    <label for="name">Ваше имя:</label>
-    <input type="text" name="name" id="name">
-    <label for="email">Ваш e-mail:</label>
-    <input type="email" name="email" id="email">
-    <label for="mail_text">Текст письма:</label>
-    <textarea name="mail_text" id="mail_text" ></textarea>
+    <div class="modal-write-us-input-half">
+      <label for="name">Ваше имя:</label>
+      <input type="text" name="name" id="name">
+    </div>
+    <div class="modal-write-us-input-half">
+      <label for="email">Ваш e-mail:</label>
+      <input type="email" name="email" id="email">
+    </div>
+    <div class="modal-write-us-input-mail-text">
+      <label for="mail_text">Текст письма:</label>
+      <textarea name="mail_text" id="mail_text" ></textarea>
+    </div>
 
     <button type="submit" class="btn btn-submit btn-modal-write-us">Отправить</button>
   </form>
