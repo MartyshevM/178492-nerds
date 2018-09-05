@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Нёрдс</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -10,23 +13,23 @@
   <nav class="navigation">
 
     <a class="main-logo" href="index.html">
-      <img src="img/nerds-logo.svg" alt="Логотип Нёрдс. Магазина готовых шаблонов" width="16" height="65"/>
+      <img src="img/nerds-logo.svg" alt="Логотип Нёрдс. Магазина готовых шаблонов" width="140" height="49"/>
     </a>
 
     <ul class="navigation-site">
       <li class="navigation-site-item">
-        <a href="studio.html">Студия</a>
+        <a class="navigation-link" href="studio.html">Студия</a>
       </li>
       <li class="navigation-site-item">
-        <a href="clients.html">Клиенты</a></li>
+        <a class="navigation-link" href="clients.html">Клиенты</a></li>
       <li class="navigation-site-item active">
-        <a href="catalog.html">Магазин</a>
+        <a class="navigation-link" href="catalog.html">Магазин</a>
       </li>
       <li class="navigation-site-item">
-        <a href="contacts.html">контакты</a>
+        <a class="navigation-link" href="contacts.html">контакты</a>
       </li>
     </ul>
-    <a href="#" class="navigation-basket">Корзина</a>
+    <a class="navigation-link navigation-basket" href="#">Корзина</a>
   </nav>
 </header>
 
@@ -37,30 +40,30 @@
 
     <ul class="slider">
 
-      <li class="slider-item active">
+      <li class="slider-item slider-item-1 active">
         <div class="slider-item-description">
           <p class="slider-item-description_head">Долго, дорого, скрупулезно.</p>
           <p class="slider-item-description_text">Математически выверенный дизайн  для вашего сайта или мобильног</p>
 
-          <a class="slider-item-description-link" href="#">Узнать больше</a>
+          <a class="btn-link slider-item-description-link" href="#">Узнать больше</a>
         </div>
       </li>
 
-      <li class="slider-item">
+      <li class="slider-item slider-item-2">
         <div class="slider-item-description">
           <p class="slider-item-description_head">Любим математику как никто другой</p>
           <p class="slider-item-description_text">Никакого креатива, только математические формулы  для расчета и</p>
 
-          <a class="slider-item-description-link" href="#">Узнать больше</a>
+          <a class="btn-link  slider-item-description-link" href="#">Узнать больше</a>
         </div>
       </li>
 
-      <li class="slider-item">
+      <li class="slider-item slider-item-3">
         <div class="slider-item-description">
           <p class="slider-item-description_head">Только ночь, только хардкор</p>
           <p class="slider-item-description_text">Работать днем, как все? Мы против этого. Ближе к полуночи работ</p>
 
-          <a class="slider-item-description-link" href="#">Узнать больше</a>
+          <a class="btn-link  slider-item-description-link" href="#">Узнать больше</a>
         </div>
       </li>
 
@@ -89,19 +92,19 @@
         <h3 class="features-list-head">Веб-сайты</h3>
         <p class="features-list-text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
 
-        <a class="features-list-link" href="#">Заказать</a>
+        <a class="btn-link  features-list-link" href="#">Заказать</a>
       </li>
       <li class="features-list-applications">
         <h3 class="features-list-head">Приложения</h3>
         <p class="features-list-text">Покорите топ-10 приложений в AppStore и Google Play</p>
 
-        <a class="features-list-link" href="#">Заказать</a>
+        <a class="btn-link  features-list-link" href="#">Заказать</a>
       </li>
       <li class="features-list-presentations">
         <h3 class="features-list-head">Презентации</h3>
         <p class="features-list-text">Вы даже не подозреваете, насколько вы изумительны!</p>
 
-        <a class="features-list-link" href="#">Заказать</a>
+        <a class="btn-link  features-list-link" href="#">Заказать</a>
       </li>
     </ul>
   </section>
@@ -109,13 +112,13 @@
   <section class="studio">
 
     <div class="studio-description">
-      <h2>Мы — маленькая, но гордая дизайн-студия из Краснодара. </h2>
+      <h2 class="studio-header">Мы — маленькая, но гордая дизайн-студия из Краснодара. </h2>
 
       <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая
         рук, как роботы.</p>
 
-      <p>Выполняем заказы на разработку:</p>
-      <ul>
+      <p class="studio-description-do-header">Выполняем заказы на разработку:</p>
+      <ul class="studio-description-do-list">
         <li>Веб-сайтов любой сложности</li>
         <li>Мобильных приложений для iOS и Android</li>
         <li>Слайдшоу и видео для корпоративных презентаций</li>
@@ -123,22 +126,22 @@
     </div>
 
     <div class="studio-statistics">
-      <h2>Мы — маленькая, но гордая дизайн-студия из Краснодара. </h2>
 
-      <p>с 2004 года Любим точность во всем:</p>
+
+      <p class="studio-statistics-header">с 2004 года Любим точность во всем:</p>
 
       <ul>
         <li>
           <span class="studio-statistics-percent">146%</span>
-          <span>Уровень самоотдачи</span>
+          <span class="studio-statistics-legend">Уровень самоотдачи</span>
         </li>
         <li>
           <span class="studio-statistics-percent">100%</span>
-          <span>Соблюдение сроков</span>
+          <span class="studio-statistics-legend">Соблюдение сроков</span>
         </li>
         <li>
           <span class="studio-statistics-percent">50%</span>
-          <span>Минимальная предоплата</span>
+          <span class="studio-statistics-legend">Минимальная предоплата</span>
         </li>
       </ul>
     </div>
@@ -148,23 +151,23 @@
   <section class="partners">
     <ul class="partners-list">
       <li>
-        <a href="#" aria-details="Ссылка на сайт партнера: Htmlacademy">
-          <img src="img/partners_htmlacademy.png" alt="" width="50" height="50">
+        <a href="#" aria-label="Ссылка на сайт партнера: Htmlacademy">
+          <img src="img/partner_logo_htmlacademy.png" alt="" width="200" height="76">
         </a>
       </li>
       <li>
-        <a href="#" aria-details="Ссылка на сайт партнера: Barbershop">
-          <img src="img/partners_barbershop.png" alt="" width="50" height="50">
+        <a href="#" aria-label="Ссылка на сайт партнера: Barbershop">
+          <img src="img/partner_logo_borodinskiy.png" alt="" width="200" height="76">
         </a>
       </li>
       <li>
-        <a href="#" aria-details="Ссылка на сайт партнера: Pink">
-          <img src="img/partners_pink.png" alt="" width="50" height="50">
+        <a href="#" aria-label="Ссылка на сайт партнера: Pink">
+          <img src="img/partner_logo_pink.png" alt="" width="200" height="76">
         </a>
       </li>
       <li>
-        <a href="#" aria-details="Ссылка на сайт партнера: Mishka">
-          <img src="img/partners_mishka.png" alt="" width="50" height="50">
+        <a href="#" aria-label="Ссылка на сайт партнера: Mishka">
+          <img src="img/partner_logo_mishka.png" alt="" width="200" height="76">
         </a>
       </li>
     </ul>
@@ -187,27 +190,31 @@
         тел. +7 (812) 275-75-75
       </span>
 
-      <button class="contacts-box-write-us">Напишите нам</button>
+      <button class="btn-link contacts-box-write-us">Напишите нам</button>
     </div>
 
-    <iframe class="contacts-map" src="" frameborder="0"></iframe>
+    <div class="contacts-map-wrapper">
+      <img class="contacts-map-image" src="img/map_with_marker.png" alt="" width="1200" height="416">
+      <iframe class="contacts-map" src="" frameborder="0"></iframe>
+    </div>
+
 
   </section>
 
   <section class="social">
     <ul class="social-list">
       <li>
-        <a href="#" aria-label="Давайте дружить ВКонтакте">
+        <a class="social-link" href="#" aria-label="Давайте дружить ВКонтакте">
           <img src="img/social_vk-icon.svg" alt="Давайте дружить ВКонтакте" width="26" height="15">
         </a>
       </li>
       <li>
-        <a href="#" aria-label="Давайте дружить Facebook">
+        <a class="social-link" href="#" aria-label="Давайте дружить Facebook">
           <img src="img/social_fb-icon.svg" alt="Давайте дружить Facebook" width="12" height="22">
         </a>
       </li>
       <li>
-        <a href="#" aria-label="Давайте дружить Instagram">
+        <a class="social-link" href="#" aria-label="Давайте дружить Instagram">
           <img src="img/social_insta-icon.svg" alt="Давайте дружить Instagram" width="21" height="21">
         </a>
       </li>
@@ -227,19 +234,19 @@
   <form action="#" method="post">
 
     <div class="modal-write-us-input-half">
-      <label for="name">Ваше имя:</label>
-      <input type="text" name="name" id="name">
+      <label class="modal-write-us-label" for="name">Ваше имя:</label>
+      <input class="modal-write-us-input" type="text" name="name" id="name" placeholder="Имя Фамилия">
     </div>
     <div class="modal-write-us-input-half">
-      <label for="email">Ваш e-mail:</label>
-      <input type="email" name="email" id="email">
+      <label class="modal-write-us-label" for="email">Ваш e-mail:</label>
+      <input class="modal-write-us-input error" type="email" name="email" id="email" placeholder="email@example.com">
     </div>
     <div class="modal-write-us-input-mail-text">
-      <label for="mail_text">Текст письма:</label>
-      <textarea name="mail_text" id="mail_text" ></textarea>
+      <label class="modal-write-us-label" for="mail_text">Текст письма:</label>
+      <textarea class="modal-write-us-input" name="mail_text" id="mail_text" placeholder="В свободной форме"></textarea>
     </div>
 
-    <button type="submit" class="btn btn-submit btn-modal-write-us">Отправить</button>
+    <button type="submit" class="btn-link btn-modal-write-us">Отправить</button>
   </form>
 </section>
 

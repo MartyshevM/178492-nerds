@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Нёрдс</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -10,23 +13,23 @@
   <nav class="navigation">
 
     <a class="main-logo" href="index.html">
-      <img src="img/nerds-logo.svg" alt="Логотип Нёрдс. Магазина готовых шаблонов" width="16" height="65"/>
+      <img src="img/nerds-logo.svg" alt="Логотип Нёрдс. Магазина готовых шаблонов" width="140" height="49"/>
     </a>
 
     <ul class="navigation-site">
       <li class="navigation-site-item">
-        <a href="studio.html">Студия</a>
+        <a class="navigation-link" href="studio.html">Студия</a>
       </li>
       <li class="navigation-site-item">
-        <a href="clients.html">Клиенты</a></li>
+        <a class="navigation-link" href="clients.html">Клиенты</a></li>
       <li class="navigation-site-item active">
-        <a href="catalog.html">Магазин</a>
+        <a class="navigation-link" href="catalog.html">Магазин</a>
       </li>
       <li class="navigation-site-item">
-        <a href="contacts.html">контакты</a>
+        <a class="navigation-link" href="contacts.html">контакты</a>
       </li>
     </ul>
-    <a href="#" class="navigation-basket">Корзина</a>
+    <a class="navigation-link navigation-basket" href="#">Корзина</a>
   </nav>
 </header>
 
@@ -34,13 +37,13 @@
 <main class="container">
   <h1 class="main-header">Магазин готовых шаблонов</h1>
 
-  <section class="filter">
+  <section class="catalog-filter">
 
     <form action="#" method="post">
       <fieldset>
-        <legend class="filter-legend">Стоимость</legend>
+        <legend class="catalog-filter-legend">Стоимость</legend>
 
-        <div class="filter-price-range">
+        <div class="catalog-filter-price-range">
 
           <div class="range-controls">
             <div class="range-scale">
@@ -51,74 +54,72 @@
           </div>
 
           <div class="range-inputs">
-            <label class="filter-range-min-price">от
+            <label class="catalog-filter-range-min-price">от
               <input name="min-price" type="text" value="0">
             </label>
-            <label class="filter-range-max-price">до
+            <label class="catalog-filter-range-max-price">до
               <input name="max-price" type="text" value="15000">
             </label>
           </div>
 
         </div>
 
-        <p class="filter-cost-input-wrapper">
+        <p class="catalog-filter-cost-input-wrapper">
         <label for="cost" class="visibility-hidden">Стоимость</label>
         <input type="range" id="cost" name="cost"
-               class="filter-cost-input"
+               class="catalog-filter-cost-input"
                min="0" max="15000" step="1" value="600"
                placeholder="от 0 до 15000"  />
         </p>
-        <p class="filter-cost-input-ranges">
-          <span class="filter-cost-range-from">
-            От <span class="filter-cost-range-from-amount"></span>
+        <p class="catalog-filter-cost-input-ranges">
+          <span class="catalog-filter-cost-range-from">
+            От <span class="catalog-filter-cost-range-from-amount"></span>
           </span>
-          <span class="filter-cost-range-to">
-            От <span class="filter-cost-range-to-amount"></span>
+          <span class="catalog-filter-cost-range-to">
+            От <span class="catalog-filter-cost-range-to-amount"></span>
           </span>
         </p>
       </fieldset>
 
       <fieldset>
-        <legend class="filter-legend">Сетка</legend>
+        <legend class="catalog-filter-legend">Сетка</legend>
 
-        <label class="filter-checkbox-label">
+        <label class="catalog-filter-checkbox-label">
           <input type="radio" name="grid" value="grid" checked /> Адаптивная
         </label>
-        <label class="filter-checkbox-label">
+        <label class="catalog-filter-checkbox-label">
           <input type="radio" name="grid" value="fixed" /> Фиксированная
         </label>
-        <label class="filter-checkbox-label">
+        <label class="catalog-filter-checkbox-label">
           <input type="radio" name="grid" value="rubber" /> Резиновая
         </label>
 
       </fieldset>
 
       <fieldset>
-        <legend class="filter-legend">Особенности</legend>
+        <legend class="catalog-filter-legend">Особенности</legend>
 
-        <label class="filter-checkbox-label">
+        <label class="catalog-filter-checkbox-label">
           <input type="checkbox" name="feachures_1" value="slider" checked /> Слайдер
         </label>
-        <label class="filter-checkbox-label">
+        <label class="catalog-filter-checkbox-label">
           <input type="checkbox" name="feachures_2" value="features_block" /> Блок преимуществ
         </label>
-        <label class="filter-checkbox-label">
+        <label class="catalog-filter-checkbox-label">
           <input type="checkbox" name="feachures_3" value="news" checked /> Новости
         </label>
-        <label class="filter-checkbox-label">
+        <label class="catalog-filter-checkbox-label">
           <input type="checkbox" name="feachures_4" value="gallery" /> Галерея
         </label>
-        <label class="filter-checkbox-label">
+        <label class="catalog-filter-checkbox-label">
           <input type="checkbox" name="feachures_5" value="basket" /> Корзина
         </label>
 
       </fieldset>
 
-      <button type="submit">Показать</button>
+      <button class="btn-link catalog-filter-submit" type="submit">Показать</button>
 
     </form>
-
-
 
   </section>
 
@@ -128,27 +129,33 @@
 
       <ul class="catalog-sort-by">
         <li>
-          <a href="#" aria-label="Сортировать по цене">По цене</a>
+          <a class="catalog-sort-link active" href="#" aria-label="Сортировать по цене">По цене</a>
         </li>
         <li>
-          <a href="#" aria-label="Сортировать по типу">По типу</a>
+          <a class="catalog-sort-link" href="#" aria-label="Сортировать по типу">По типу</a>
         </li>
         <li>
-          <a href="#" aria-label="Сортировать по названию">По названию</a>
+          <a class="catalog-sort-link" href="#" aria-label="Сортировать по названию">По названию</a>
         </li>
       </ul>
       <ul class="catalog-sort-direction">
         <li>
-          <a href="#" aria-label="Дополнительно сортировать по возрастанию">По возрастанию</a>
+          <a class="catalog-sort-link active" href="#" aria-label="Дополнительно сортировать по возрастанию">
+            <img src="img/icon-down-dir.svg" alt="По спаданию" width="11" height="10">
+          </a>
         </li>
         <li>
-          <a href="#" aria-label="Дополнительно сортироват по спаданию">По спаданию</a>
+          <a class="catalog-sort-link" href="#" aria-label="Дополнительно сортироват по спаданию">
+            <img src="img/icon-up-dir.svg" alt="По возрастанию"  width="11" height="10">
+          </a>
         </li>
       </ul>
     </div>
 
     <ul class="catalog-list">
-      <li>
+      <li class="catalog-list-item" tabindex="0">
+        <div class="browser"></div>
+
         <figure class="catalog-list-image">
           <img src="img/catalog_sedona.jpg" alt="Sedona" width="360" height="616">
         </figure>
@@ -157,12 +164,14 @@
           <h4>
             <a class="catalog-list-item-description-link" href="#">Sedona</a>
           </h4>
-          <p>Информационный сайт для туристов</p>
-          <a class="catalog-list-item-description-order" href="#">9 900 руб.</a>
+          <p class="catalog-list-item-description">Информационный сайт для туристов</p>
+          <a class="btn-link  catalog-list-item-description-order" href="#">9 900 руб.</a>
         </div>
       </li>
 
-      <li>
+      <li class="catalog-list-item" tabindex="0">
+        <div class="browser"></div>
+
         <figure class="catalog-list-image">
           <img src="img/catalog_pink.jpg" alt="Pink" width="360" height="616">
         </figure>
@@ -170,13 +179,15 @@
         <div class="catalog-list-item-description">
           <h4>
             <a class="catalog-list-item-description-link" href="#">Pink</a>
-          </h4></h4>
-          <p>Продуктовый лендинг приложения для iOS и Android</p>
-          <a class="catalog-list-item-description-order" href="#">9 900 руб.</a>
+          </h4>
+          <p class="catalog-list-item-description">Продуктовый лендинг приложения для iOS и Android</p>
+          <a class=" btn-link catalog-list-item-description-order" href="#">9 900 руб.</a>
         </div>
       </li>
 
-      <li>
+      <li class="catalog-list-item" tabindex="0">
+        <div class="browser"></div>
+
         <figure class="catalog-list-image">
           <img src="img/catalog_barbershop.jpg" alt="Barbershop" width="360" height="616">
         </figure>
@@ -185,12 +196,14 @@
           <h4>
             <a class="catalog-list-item-description-link" href="#">Barbershop</a>
           </h4>
-          <p>Сайт салона красоты. Для мужчин, да.</p>
-          <a class="catalog-list-item-description-order" href="#">9 900 руб.</a>
+          <p class="catalog-list-item-description">Сайт салона красоты. Для мужчин, да.</p>
+          <a class="btn-link  catalog-list-item-description-order" href="#">9 900 руб.</a>
         </div>
       </li>
 
-      <li>
+      <li class="catalog-list-item" tabindex="0">
+        <div class="browser"></div>
+
         <figure class="catalog-list-image">
           <img src="img/catalog_mishka.jpg" alt="Mishka" width="360" height="616">
         </figure>
@@ -199,12 +212,14 @@
           <h4>
             <a class="catalog-list-item-description-link" href="#">Mishka</a>
           </h4>
-          <p>Интернет-магазин вязаных игрушек</p>
-          <a class="catalog-list-item-description-order" href="#">9 900 руб.</a>
+          <p class="catalog-list-item-description">Интернет-магазин вязаных игрушек</p>
+          <a class="btn-link  catalog-list-item-description-order" href="#">9 900 руб.</a>
         </div>
       </li>
 
-      <li>
+      <li class="catalog-list-item" tabindex="0">
+        <div class="browser"></div>
+
         <figure class="catalog-list-image">
           <img src="img/catalog_aplus.jpg" alt="A Plus" width="360" height="616">
         </figure>
@@ -213,12 +228,14 @@
           <h4>
             <a class="catalog-list-item-description-link" href="#">A Plus</a>
           </h4>
-          <p>Лендинг курсов повышения квалификации</p>
-          <a class="catalog-list-item-description-order" href="#">9 900 руб.</a>
+          <p class="catalog-list-item-description">Лендинг курсов повышения квалификации</p>
+          <a class="btn-link  catalog-list-item-description-order" href="#">9 900 руб.</a>
         </div>
       </li>
 
-      <li>
+      <li class="catalog-list-item" tabindex="0">
+        <div class="browser"></div>
+
         <figure class="catalog-list-image">
           <img src="img/catalog_kvast.jpg" alt="Kvast" width="360" height="616">
         </figure>
@@ -227,17 +244,17 @@
           <h4>
             <a class="catalog-list-item-description-link" href="#">Kvast</a>
           </h4>
-          <p>Промо-сайт производителя крафтового кваса</p>
-          <a class="catalog-list-item-description-order" href="#">9 900 руб.</a>
+          <p class="catalog-list-item-description">Промо-сайт производителя крафтового кваса</p>
+          <a class="btn-link catalog-list-item-description-order" href="#">9 900 руб.</a>
         </div>
       </li>
 
     </ul>
 
     <ul class="catalog-pagination">
-      <li>
-        <a class="catalog-pagination-item paginator-direction paginator-direction-prev">Предидущая</a>
-      </li>
+      <!--<li>-->
+        <!--<a class="catalog-pagination-item paginator-direction paginator-direction-prev">Предидущая</a>-->
+      <!--</li>-->
       <li>
         <a class="catalog-pagination-item active">1</a>
       </li>
@@ -264,25 +281,41 @@
       <h2>NЁRDS DESIGN STUDIO</h2>
 
       <p class="contacts-box-adress">
-        191186, Санкт-Петербург, <br>
+        191186, Санкт-Петербург,
         ул. Б. Конюшенная, д. 19/8
       </p>
       <span class="contacts-box-phone">
         тел. +7 (812) 275-75-75
       </span>
 
-      <button class="contacts-box-write-us">Напишите нам</button>
+      <button class="btn-link contacts-box-write-us">Напишите нам</button>
     </div>
 
-    <iframe class="contacts-map" src="" frameborder="0"></iframe>
+    <div class="contacts-map-wrapper">
+      <img class="contacts-map-image" src="img/map_with_marker.png" alt="" width="1200" height="416">
+      <iframe class="contacts-map" src="" frameborder="0"></iframe>
+    </div>
+
 
   </section>
 
   <section class="social">
     <ul class="social-list">
-      <li><a href="#"><img src="img/social_vk-icon.svg" alt="Давайте дружить ВКонтакте" width="26" height="15"></a></li>
-      <li><a href="#"><img src="img/social_fb-icon.svg" alt="Давайте дружить Facebook" width="12" height="22"></a></li>
-      <li><a href="#"><img src="img/social_insta-icon.svg" alt="Давайте дружить Instagram" width="21" height="21"></a></li>
+      <li>
+        <a class="social-link" href="#" aria-label="Давайте дружить ВКонтакте">
+          <img src="img/social_vk-icon.svg" alt="Давайте дружить ВКонтакте" width="26" height="15">
+        </a>
+      </li>
+      <li>
+        <a class="social-link" href="#" aria-label="Давайте дружить Facebook">
+          <img src="img/social_fb-icon.svg" alt="Давайте дружить Facebook" width="12" height="22">
+        </a>
+      </li>
+      <li>
+        <a class="social-link" href="#" aria-label="Давайте дружить Instagram">
+          <img src="img/social_insta-icon.svg" alt="Давайте дружить Instagram" width="21" height="21">
+        </a>
+      </li>
     </ul>
 
     <div class="social-lets-text">
@@ -299,19 +332,19 @@
   <form action="#" method="post">
 
     <div class="modal-write-us-input-half">
-      <label for="name">Ваше имя:</label>
-      <input type="text" name="name" id="name">
+      <label class="modal-write-us-label" for="name">Ваше имя:</label>
+      <input class="modal-write-us-input" type="text" name="name" id="name" placeholder="Имя Фамилия">
     </div>
     <div class="modal-write-us-input-half">
-      <label for="email">Ваш e-mail:</label>
-      <input type="email" name="email" id="email">
+      <label class="modal-write-us-label" for="email">Ваш e-mail:</label>
+      <input class="modal-write-us-input error" type="email" name="email" id="email" placeholder="email@example.com">
     </div>
     <div class="modal-write-us-input-mail-text">
-      <label for="mail_text">Текст письма:</label>
-      <textarea name="mail_text" id="mail_text" ></textarea>
+      <label class="modal-write-us-label" for="mail_text">Текст письма:</label>
+      <textarea class="modal-write-us-input" name="mail_text" id="mail_text" placeholder="В свободной форме"></textarea>
     </div>
 
-    <button type="submit" class="btn btn-submit btn-modal-write-us">Отправить</button>
+    <button type="submit" class="btn-link btn-modal-write-us">Отправить</button>
   </form>
 </section>
 
