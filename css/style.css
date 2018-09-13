@@ -205,6 +205,10 @@ input[type="radio"].visually-hidden {
   height: 416px;
 }
 
+.contacts-map-wrapper iframe{
+  border: none;
+}
+
 .contacts-map {
   border: 0;
   width: 100%;
@@ -346,9 +350,8 @@ input[type="radio"].visually-hidden {
 
 /* modal */
 .modal-write-us {
-  position: absolute;
-  /* bottom: 180px; */
-  bottom: 0;
+  position: fixed;
+  bottom: 180px;
   left: 50%;
   margin-left: -480px;
   width: 780px;
@@ -569,17 +572,17 @@ input[type="radio"].visually-hidden {
   display: block;
 }
 
-.slider-item-1 {
+.slider-item.slider-item-1 {
   background-image: url("../img/nerds-index-slide1.png");
   z-index: 2;
 }
 
-.slider-item-2 {
+.slider-item.slider-item-2 {
   background-image: url("../img/nerds-index-slide2.png");
   z-index: 1;
 }
 
-.slider-item-3 {
+.slider-item.slider-item-3 {
   background-image: url("../img/nerds-index-slide3.png");
   z-index: 0;
 }
@@ -1384,4 +1387,61 @@ input[type="radio"].visually-hidden {
   width: 358px;
   height: 574px;
   border: 1px solid #e5e5e5;
+}
+
+.modal {
+  display: none;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  /*90% {*/
+    /*transform: translateY(-10px);*/
+  /*}*/
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes error {
+  0% {
+    transform: translateX(0);
+  }
+
+  20% {
+    transform: translateX(-20px);
+  }
+
+  40% {
+    transform: translateX(40px);
+  }
+
+  60% {
+    transform: translateX(-40px);
+  }
+
+  80% {
+    transform: translateX(100px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.modal-show {
+  display: block;
+  animation: bounce 0.3s;
+}
+
+.modal-error {
+  animation: error 0.3s;
 }
