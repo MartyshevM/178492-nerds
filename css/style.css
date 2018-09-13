@@ -451,17 +451,29 @@ input[type="radio"].visually-hidden {
 
 
 .modal-write-us-input::placeholder,
+.modal-write-us-input:hover::placeholder {
+  color: #444444;
+  opacity: 0.5;
+}
+
 .modal-write-us-input::-webkit-input-placeholder,
-.modal-write-us-input:-ms-input-placeholder, /* Internet Explorer 10-11 */
+.modal-write-us-input:hover::-webkit-input-placeholder {
+  color: #444444;
+  opacity: 0.5;
+}
+
 .modal-write-us-input::-ms-input-placeholder, /* Microsoft Edge */
-.modal-write-us-input:hover::placeholder,
-.modal-write-us-input:hover::-webkit-input-placeholder,
+.modal-write-us-input:-ms-input-placeholder /* Internet Explorer 10-11 */
+{
+  color: #444444;
+  opacity: 0.5;
+}
+
 .modal-write-us-input:hover:-ms-input-placeholder, /* Internet Explorer 10-11 */
 .modal-write-us-input:hover::-ms-input-placeholder /* Microsoft Edge */
 {
   color: #444444;
   opacity: 0.5;
-
 }
 
 /*hover*/
@@ -474,9 +486,18 @@ input[type="radio"].visually-hidden {
   border: 2px solid #000000;
 }
 
-.modal-write-us-input:focus::placeholder,
-.modal-write-us-input:focus::-webkit-input-placeholder,
-.modal-write-us-input:focus:-ms-input-placeholder, /* Internet Explorer 10-11 */
+.modal-write-us-input:focus::placeholder
+{
+  opacity: 1;
+}
+.modal-write-us-input:focus::-webkit-input-placeholder
+{
+  opacity: 1;
+}
+.modal-write-us-input:focus:-ms-input-placeholder /* Internet Explorer 10-11 */
+{
+  opacity: 1;
+}
 .modal-write-us-input:focus::-ms-input-placeholder /* Microsoft Edge */
 {
   opacity: 1;
@@ -487,8 +508,14 @@ input[type="radio"].visually-hidden {
   border-color: #e74246;
   color: #e74246;
 }
-.modal-write-us-input.error::placeholder,
-.modal-write-us-input.error::-webkit-input-placeholder,
+.modal-write-us-input.error::placeholder {
+  color: #e74246;
+  opacity: 1;
+}
+.modal-write-us-input.error::-webkit-input-placeholder {
+  color: #e74246;
+  opacity: 1;
+}
 .modal-write-us-input.error:-ms-input-placeholder, /* Internet Explorer 10-11 */
 .modal-write-us-input.error::-ms-input-placeholder /* Microsoft Edge */
 {
