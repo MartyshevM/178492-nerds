@@ -78,8 +78,7 @@ var modal_input_text = document.querySelector(".modal-write-us-form [name=mail_t
 btn_modal_submit.addEventListener("click", function (evt) {
   try {
     modal.classList.remove("modal-error");
-    console.log('remove');
-  } catch (e) { console.log('not removed'); }
+  } catch (e) {}
   try {
     modal_input_name.classList.remove("error");
   } catch (e) {}
