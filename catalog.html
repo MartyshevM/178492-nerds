@@ -9,7 +9,7 @@
 </head>
 <body  class="inner-page">
 
-<div class="full-width-container grey-container">
+<div class="grey-container">
   <header class="header site-container">
     <nav class="navigation">
 
@@ -38,13 +38,13 @@
 
 <main class="container">
 
-  <div class="full-width-container grey-container">
+  <div class="grey-container">
     <div class="main-header-wrapper site-container">
       <h1 class="main-header">Магазин готовых шаблонов</h1>
     </div>
   </div>
 
-  <div class="full-width-container">
+  <div>
 
     <div class="site-container catalog-page-wrapper">
 
@@ -151,13 +151,13 @@
           </ul>
           <ul class="catalog-sort-direction">
             <li>
-              <a class="catalog-sort-link active" href="#" aria-label="Дополнительно сортировать по возрастанию">
-                <img src="img/icon-down-dir.svg" alt="По спаданию" width="11" height="10">
+              <a class="catalog-sort-link direction-down active" href="#" aria-label="Дополнительно сортировать по возрастанию">
+                <!--<img src="img/icon-down-dir.svg" alt="По спаданию" width="11" height="10">-->
               </a>
             </li>
             <li>
-              <a class="catalog-sort-link" href="#" aria-label="Дополнительно сортироват по спаданию">
-                <img src="img/icon-up-dir.svg" alt="По возрастанию"  width="11" height="10">
+              <a class="catalog-sort-link direction-up" href="#" aria-label="Дополнительно сортироват по спаданию">
+                <!--<img src="img/icon-up-dir.svg" alt="По возрастанию"  width="11" height="10">-->
               </a>
             </li>
           </ul>
@@ -165,11 +165,6 @@
 
         <ul class="catalog-list">
           <li class="catalog-list-item" tabindex="0">
-            <div class="browser">
-              <span class="browser-button"></span>
-              <span class="browser-button"></span>
-              <span class="browser-button"></span>
-            </div>
 
             <figure class="catalog-list-image">
               <img src="img/catalog_sedona.jpg" alt="Sedona" width="360" height="576">
@@ -185,11 +180,6 @@
           </li>
 
           <li class="catalog-list-item" tabindex="0">
-            <div class="browser">
-              <span class="browser-button"></span>
-              <span class="browser-button"></span>
-              <span class="browser-button"></span>
-            </div>
 
             <figure class="catalog-list-image">
               <img src="img/catalog_pink.jpg" alt="Pink" width="360" height="576">
@@ -205,11 +195,6 @@
           </li>
 
           <li class="catalog-list-item" tabindex="0">
-            <div class="browser">
-              <span class="browser-button"></span>
-              <span class="browser-button"></span>
-              <span class="browser-button"></span>
-            </div>
 
             <figure class="catalog-list-image">
               <img src="img/catalog_barbershop.jpg" alt="Barbershop" width="360" height="576">
@@ -225,11 +210,6 @@
           </li>
 
           <li class="catalog-list-item" tabindex="0">
-            <div class="browser">
-              <span class="browser-button"></span>
-              <span class="browser-button"></span>
-              <span class="browser-button"></span>
-            </div>
 
             <figure class="catalog-list-image">
               <img src="img/catalog_mishka.jpg" alt="Mishka" width="360" height="576">
@@ -245,11 +225,6 @@
           </li>
 
           <li class="catalog-list-item" tabindex="0">
-            <div class="browser">
-              <span class="browser-button"></span>
-              <span class="browser-button"></span>
-              <span class="browser-button"></span>
-            </div>
 
             <figure class="catalog-list-image">
               <img src="img/catalog_aplus.jpg" alt="A Plus" width="360" height="576">
@@ -265,11 +240,6 @@
           </li>
 
           <li class="catalog-list-item" tabindex="0">
-            <div class="browser">
-              <span class="browser-button"></span>
-              <span class="browser-button"></span>
-              <span class="browser-button"></span>
-            </div>
 
             <figure class="catalog-list-image">
               <img src="img/catalog_kvast.jpg" alt="Kvast" width="360" height="576">
@@ -311,7 +281,7 @@
 </main>
 
 <footer class="footer">
-  <div class="full-width-container">
+  <div>
 
     <section class="contacts">
 
@@ -376,7 +346,9 @@
 <section class="modal modal-write-us">
   <div class="modal-write-us-header-wrapper">
     <h2>Напишите нам</h2>
-    <button class="modal-close"></button>
+    <button class="modal-close">
+      <span class="visually-hidden">Закрыть</span>
+    </button>
   </div>
 
   <form class="modal-write-us-form" action="https://echo.htmlacademy.ru" method="post">
