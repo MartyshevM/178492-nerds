@@ -651,30 +651,39 @@ input[type="radio"].visually-hidden {
 
 /* features */
 .features-list li {
-  background-repeat: no-repeat;
-  background-position: center top;
   margin: 0;
   padding: 0;
   margin-right: 100px;
   width: 300px;
-  min-height: 250px;
-  margin-bottom: 30px;
-  padding-top: 147px;
+  margin-bottom: 80px;
 }
 
 .features-list li:nth-child(3n) {
   margin-right: 0;
 }
 
-.features-list .features-list-websites {
+.features-list li::before {
+  content: "";
+  display: block;
+
+  width: 300px;
+  height: 146px;
+
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  margin-bottom: 20px;
+}
+
+.features-list .features-list-websites::before {
   background-image: url("../img/advantages_1.png");
 }
 
-.features-list .features-list-applications {
+.features-list .features-list-applications::before {
   background-image: url("../img/advantages_2.png");
 }
 
-.features-list .features-list-presentations {
+.features-list .features-list-presentations::before {
   background-image: url("../img/advantages_3.png");
 }
 
@@ -815,7 +824,7 @@ input[type="radio"].visually-hidden {
   line-height: 24px;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 35px;
 }
 
 .studio-statistics-list {
@@ -827,8 +836,9 @@ input[type="radio"].visually-hidden {
 }
 
 .studio-statistics-list-item {
-  width: 100px;
-  margin-right: 20px;
+  width: 110px;
+  margin-right: 10px;
+  margin-top: 15px;
 }
 
 .studio-statistics-percent {
