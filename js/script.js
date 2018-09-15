@@ -5,33 +5,36 @@ var slider_2 = document.querySelector(".slider-item-2");
 var slider_3 = document.querySelector(".slider-item-3");
 
 
-slider_controls.forEach(function (slider_control) {
-  slider_control.addEventListener("click", function (evt) {
-    evt.preventDefault();
+try {
+  for (var key in slider_controls) {
 
-    if (!this.classList.contains("active")) {
-      try {
-        document.querySelector(".slider-item.active").classList.remove('active');
-      } catch (e) {}
-      try {
-        document.querySelector(".slider-indicator-item-btn.active").classList.remove('active');
-      } catch (e) {}
-    }
+    slider_controls[key].addEventListener("click", function (evt) {
+      evt.preventDefault();
 
-    if (this.classList.contains("slider-item-1")) {
-      this.classList.add("active");
-      slider_1.classList.add('active');
-    }
-    else if (this.classList.contains("slider-item-2")) {
-      this.classList.add("active");
-      slider_2.classList.add('active');
-    }
-    else if (this.classList.contains("slider-item-3")) {
-      this.classList.add("active");
-      slider_3.classList.add('active');
-    }
-  });
-});
+      if (!this.classList.contains("active")) {
+        try {
+          document.querySelector(".slider-item.active").classList.remove('active');
+        } catch (e) {}
+        try {
+          document.querySelector(".slider-indicator-item-btn.active").classList.remove('active');
+        } catch (e) {}
+      }
+
+      if (this.classList.contains("slider-item-1")) {
+        this.classList.add("active");
+        slider_1.classList.add('active');
+      }
+      else if (this.classList.contains("slider-item-2")) {
+        this.classList.add("active");
+        slider_2.classList.add('active');
+      }
+      else if (this.classList.contains("slider-item-3")) {
+        this.classList.add("active");
+        slider_3.classList.add('active');
+      }
+    });
+  }
+} catch (e) {}
 
 
 // модальное окно

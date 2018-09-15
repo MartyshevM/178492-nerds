@@ -650,7 +650,7 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-item-description {
-  width: 516px;
+  width: 520px;
   padding-top: 78px;
   padding-bottom: 80px;
 }
@@ -1626,6 +1626,7 @@ input[type="radio"].visually-hidden {
   /*90% {*/
   /*transform: translateY(-10px);*/
   /*}*/
+
 
   100% {
     -webkit-transform: translateY(0);
