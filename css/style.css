@@ -677,14 +677,17 @@ input[type="radio"].visually-hidden {
 
 .features-list .features-list-websites::before {
   background-image: url("../img/advantages_1.png");
+  background-color: #fb565a;
 }
 
 .features-list .features-list-applications::before {
   background-image: url("../img/advantages_2.png");
+  background-color: #00ca74;
 }
 
 .features-list .features-list-presentations::before {
   background-image: url("../img/advantages_3.png");
+  background-color: #efc84a;
 }
 
 .features-list-applications .btn-link {
