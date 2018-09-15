@@ -246,9 +246,9 @@ input[type="radio"].visually-hidden {
 
 .contacts-box {
   background-color: #ffffff;
-  position: absolute;
-  top: 53px;
-  left: 20px;
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: auto;
   width: 219px;
   padding: 50px 50px;
 }
@@ -876,16 +876,14 @@ input[type="radio"].visually-hidden {
   padding: 0;
   width: 300px;
   position: relative;
-  /*display: flex;*/
-  /*align-items: center;*/
-  /*justify-content: flex-end;*/
 }
 
 .partners-list li:not(:last-child)::after {
   content: "";
 
   position: absolute;
-  bottom: 0;
+  top: 50%;
+  margin-top: -32px;
   right: 0;
   width: 2px;
   height: 52px;
