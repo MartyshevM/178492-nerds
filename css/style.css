@@ -54,7 +54,11 @@ input[type="radio"].visually-hidden {
 
 .btn-link {
   display: inline-block;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
+
   background-color: #fb565a;
   border: none;
   border-radius: 2px;
@@ -118,7 +122,8 @@ input[type="radio"].visually-hidden {
   margin-right: 46px;
 }
 
-.navigation-site-item.active a {
+.navigation-site-item.active a,
+.navigation-basket.active {
   border-bottom: 2px solid #fb565a;
 }
 
@@ -174,7 +179,7 @@ input[type="radio"].visually-hidden {
   max-width: 160px;
   text-align: right;
   padding-top: 29px;
-  padding-bottom: 12px;
+  padding-bottom: 6px;
   padding-left: 26px;
 
   margin: 0;
@@ -1017,8 +1022,6 @@ input[type="radio"].visually-hidden {
 }
 
 .range-inputs label {
-  /*display: inline-block;*/
-  /*width: 50%;*/
   font-size: 16px;
   text-transform: uppercase;
 }
@@ -1067,6 +1070,7 @@ input[type="radio"].visually-hidden {
   padding-top: 4px;
   margin-bottom: 16px;
   cursor: pointer;
+  color: rgba(40,49,54,1);
 }
 
 .catalog-filter-radio-button {
@@ -1076,7 +1080,29 @@ input[type="radio"].visually-hidden {
   left: 0;
   width: 25px;
   height: 25px;
+  opacity: 0.4;
   background: url("../img/radio-off.svg") no-repeat center center;
+}
+
+.catalog-filter-checkbox-label:hover .catalog-filter-checkbox,
+.catalog-filter-radio-label:hover .catalog-filter-radio-button {
+  opacity: 1;
+}
+
+.catalog-filter-checkbox-label:hover ,
+.catalog-filter-radio-label:hover {
+  color: #000000;
+}
+
+.catalog-filter-radio-input:disabled + .catalog-filter-radio-button,
+.catalog-filter-checkbox-input:disabled + .catalog-filter-checkbox
+{
+  opacity: 0.1;
+}
+
+.catalog-filter-radio-input:disabled ~ span,
+.catalog-filter-checkbox-input:disabled ~ span {
+  color: rgba(40,49,54,0.3);
 }
 
 .catalog-filter-radio-input:checked + .catalog-filter-radio-button {
@@ -1095,6 +1121,7 @@ input[type="radio"].visually-hidden {
   left: 0;
   width: 27px;
   height: 25px;
+  opacity: 0.4;
   background: url("../img/checkbox-off.svg") no-repeat 0 center;
 }
 
@@ -1173,6 +1200,7 @@ input[type="radio"].visually-hidden {
   width: 11px;
   height: 10px;
   display: inline-block;
+  vertical-align: center;
   margin-left: 20px;
   background-position: center;
   background-repeat: no-repeat;
@@ -1273,13 +1301,10 @@ input[type="radio"].visually-hidden {
   margin-left: 9px;
 }
 
-.catalog-list-item:hover .browser {
-  background-color: #4d4d4d;
+.catalog-list-item:hover {
+  border-top-color: #4d4d4d;
 }
 
-/*.catalog-list-item:hover .browser {*/
-/*opacity: 1;*/
-/*}*/
 
 .catalog-list-item-description {
   visibility: hidden;
@@ -1312,9 +1337,11 @@ input[type="radio"].visually-hidden {
   font-weight: 500;
   text-transform: uppercase;
   min-width: 50px;
-  box-sizing: border-box;
   height: 50px;
 
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .paginator-direction {
@@ -1403,7 +1430,6 @@ input[type="radio"].visually-hidden {
   height: 14px;
   border-radius: 50%;
   background-color: #ffffff;
-  /*margin-left: 9px;*/
   box-shadow:
     23px 0 0 0 #ffffff,
     46px 0 0 0 #ffffff;
